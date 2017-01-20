@@ -1,13 +1,66 @@
 <html>
     <head>
         <title>Winner-Takes-All Crowdfunding Test App</title>
+        <link rel="stylesheet" type="text/css" href="./css/foundation.min.css">
+        <style>
+            .status-info {
+                height: 100%;
+                background: #eee;
+            }
+        </style>
     </head>
     <body>
-        <button onClick="javascript:submit()">submit project</button>
-        <button onClick="javascript:support()">support project</button>
-        <button onClick="javascript:showprojects()">show projects</button>
-        <button onClick="javascript:finish()">finish</button>
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <div class="top-bar-right">
+                    <ul class="menu">
+                        <li class="menu-text">Winner Takes All Crowdfunding</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="small-7 columns">
+                <div class="row">
+                    <div class="small-12 columns">
+                        <h4>Create Contract:</h4>
+                        <label>Minimum Entry Fee:
+                            <input type="number" placeholder="100">
+                        </label>
+                        <label>Project Proposal Deadline (Seconds from now):
+                            <input type="number" placeholder="50">
+                        </label>
+                        <label>Campaign Deadline (Seconds from now):
+                            <input type="number" placeholder="100">
+                        </label>
+                    </div>
+                </div>
+                <div class="row">  
+                    <div class="small-12 columns">
+                        Form for Supporting a project
+                    </div>
+                </div>
+                <div class="row">  
+                    <div class="small-12 columns">
+                        Form for Supporting a project
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-12 columns">
+                        Form for Finishing the contract 
+                    </div>
+                </div>
+            </div>
+            <div class="small-5 columns status-info">
+                <h3>Contract Information:</h3>
+            </div>
+        </div>
     </body>
+    <script src="./js/vendor/jquery.js"></script>
+    <script src="./js/vendor/what-input.js"></script>
+    <script src="./js/vendor/foundation.min.js"></script>
+    <script src="./js/foundation.js"></script>
+    <script src="./js/async.min.js"></script>
     <script src="./js/web3.min.js"></script>
     <script src="./contract.js"></script>
     <script src="./app.js"></script>
